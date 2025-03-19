@@ -2,7 +2,7 @@ import React, { FormEvent, useState } from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
-import { toast } from "../ui/sonner";
+/* import { toast } from "../ui/sonner"; */
 
 type SearchFormProps = {
   userName: string;
@@ -16,7 +16,7 @@ export default function SearchFrom({ userName, setUserName }: SearchFormProps) {
     e.preventDefault();
     if (text === "") {
       console.log("please enter a username");
-      toast("please enter a username");
+      /*     toast("please enter a username"); */
       return;
     }
     setUserName(text);
